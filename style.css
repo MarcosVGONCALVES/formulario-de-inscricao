@@ -1,0 +1,35 @@
+body{
+    background-image: url(image/87367.jpg);
+    background-size: cover;
+    display: block;
+}
+.h3{
+    color: aliceblue;
+    text-align: center;
+}
+.nome{
+    color: aliceblue;
+}
+.cpf{
+    color: aliceblue;
+}
+.email{
+    color: aliceblue;
+}
+.senha{
+    color: aliceblue;
+}
+.telefone{
+    color: aliceblue;
+}
+.data-nascimento{
+    color: aliceblue;
+}
+.enviar{
+    color:  blue;
+    font-weight: bold;
+}
+.formulario-centro{
+    text-align: center;
+    font-size: larger;
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <h3 class="h3">Formulário:</h3>
+    <section class="formulario-centro">
+  <form method="post" action="index.html">
+    <label class="nome">Nome completo:</label><br />
+    <input  type="text" required autofocus pattern="^[A-Za-záàâãéèêíïóôõöúçñÁÀÂÃÉÈÍÏÓÔÕÖÚÇÑ ]+$"
+      title="Digite o Nome completo" placeholder="Nome Completo"/><br/>
+
+    <label class="cpf">CPF:</label><br />
+    <input type="text" required pattern="^(\d{3}\.\d{3}\.\d{3}-\d{2})|(\d{11})$"
+    placeholder="888.888.888-88" title="Digite o cpf corretamente"/><br />
+
+    <label class="email">Email:</label><br />
+    <input type="email" required/><br />
+
+    <label class="senha">Senha:</label><br />
+    <input type="password" required title="A senha deve conter ao menos 1 letra minúscula, 1 letra maiúscula
+    1 número ou caractere especial e ter um mínimo de 8 caracteres"
+    pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$"><br />
+
+    <label class="telefone">Telefone:</label><br />
+    <input type="tel" required placeholder="(88) 88888-8888"
+    pattern="\([0-9]{2}\)[\s][0-9]{5}-[0-9]{4}" title="Numero não confere com o padrão."/><br />
+
+    <label class="data-nascimento">Data de Nascimento:</label><br/>
+    <input  type="date" required min="1938-01-01" max="2070-12-31"/><br /><br />
+
+    <input  class="enviar" type="submit" value="Enviar" />
+
+  </form>
+</section>
+</body>
+</html>
